@@ -1,5 +1,5 @@
 // DATA
-var person = {};
+var person = [];
 
 // ASSIGNTMENT WITH DOTS
 person.name = "Mrs. White";
