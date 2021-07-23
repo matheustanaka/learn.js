@@ -11,7 +11,7 @@ _.filter = function (arr, callback) {
   const storage = [];
   //loop through array
   for (let i = 0; i < arr.length; i++) {
-    //check if cb returns true
+    //check if callback returns true
     if (callback(arr[i], i, arr) === true) {
       //if returns true, push into array
       storage.push(arr[i]);
@@ -103,3 +103,59 @@ const videoData = [
 _.filter(videoData, function (suspectsObject) {
   return suspectsObject.present;
 });
+
+let matricula = [
+  {
+    name: "Matheus Tanaka",
+    numMatricula: 12,
+    isActive: true,
+    date: "12/07/21",
+  },
+  {
+    name: "Joao Tanaka",
+    numMatricula: 14,
+    isActive: false,
+    date: "02/07/21",
+  },
+  {
+    name: "Vanessa",
+    numMatricula: 1,
+    isActive: true,
+    date: "25/07/21",
+  },
+  {
+    name: "Jorge",
+    numMatricula: 15,
+    isActive: false,
+    date: "22/07/21",
+  },
+];
+
+function isActive(active) {
+  return active.isActive === false;
+}
+
+function date(date) {
+  return date.date === "22/07/21";
+}
+
+// matricula.filter(isActive)
+// matricula.filter(date)
+
+//Generics function
+//Inline Function
+// matricula.filter((name) => (name.name[0] === "M"))
+//Inline Function
+// matricula.filter((num) => (num.numMatricula == 1))
+
+//return all of those names
+matricula.filter((name) => name.name.length > 0);
+/* 
+THE FILTER FUNCTION WILL RETURN A BOOLEAN, 
+SO, YOU WILL GIVE A PARAMETER TO THE FUNCTION AND FILTER WILL RETURN TRUE OR FALSE */
+/*
+  IF THE PARAMETER WILL BE EQUALS TRUE, 
+  FILTER WILL RETURN SOMETHING, 
+  IF FILTER EQUALS FALSE, 
+  THEN WILL RETURN NOTHING
+*/
