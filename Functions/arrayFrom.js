@@ -60,8 +60,12 @@ Array.from(mapper.keys());
 Array.from([1, 2, 3], x => x + x);
 // [2, 4, 6]
 
-// Generate a sequence of numbers
+// Generate a sequence of Numbers
 // Since the array is initialized with `undefined` on each position,
 // the value of `v` below will be `undefined`
 Array.from({length: 5}, (v, i) => i);
-// [0, 1, 2, 3, 4]
+// [0, 1, 2, 3, 4].
+
+Array.from({length: 10}, (v, i) => i);
+// [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].
+
