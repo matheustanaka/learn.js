@@ -4,6 +4,8 @@ function arrayMerge(array1,array2){
     array1 = ["gato", "lebre","cachorro"];
     array2 = ["tartaruga","esquilo"];
 
+    //Usando o spread operator "...array" que basicamente clona os dados de um array
+
     const newArr = [...array1, ...array2];
 
     console.log(newArr);
