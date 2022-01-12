@@ -10,3 +10,4 @@ function arrayPosition(arr){
    }
    //executando a função
    arrayPosition();
+   //OUTPUT: JOSIAS - posição 5
