@@ -1,0 +1,16 @@
+{
+  "name": "hello-world-001",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "readline": "^1.3.0"
+  }
+}
